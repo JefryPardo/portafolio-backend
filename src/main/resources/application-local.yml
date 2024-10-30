@@ -1,0 +1,18 @@
+spring:
+    config:
+        activate:
+            on-profile: local
+
+openai:
+    url: https://api.openai.com/v1/chat/completions
+    api-key: 
+    config-request:
+        max-tokens: 100
+        model: "gpt-3.5-turbo"
+        temperature: 0.5
+        top-p: 1.0
+
+resttemplate:
+  connect-timeout: 10000
+  connection-request-timeout: 2000
+  read-timeout: 20000

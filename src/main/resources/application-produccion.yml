@@ -1,0 +1,12 @@
+spring:
+    config:
+        activate:
+            on-profile: produccion
+
+chatgpt:
+    api-key: 
+
+resttemplate:
+  connect-timeout: 2000
+  connection-request-timeout: 2000
+  read-timeout: 9000
