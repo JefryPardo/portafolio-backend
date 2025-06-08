@@ -10,7 +10,6 @@ import co.com.jefrypardo.portafolio.dto.openai.ChatRequestBody;
 import co.com.jefrypardo.portafolio.dto.openai.Choice;
 import co.com.jefrypardo.portafolio.providers.OpenaiProvider;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -81,14 +80,29 @@ public class OpenaiClient {
                 "30. PrimeFlex\n" +
                 "31. Observables\n" +
                 "32. Optimización del Rendimiento en Aplicaciones Angular\n"+
-                "33. Dominio de Angular CLI"+
-                "34. Dominio de Angular CLI"
+                "33. Dominio de Angular CLI"
 
                 +"Educación\n" +
                 "1. Universidad: Tecnólogo en Desarrollo de Software de la Fundación Universitaria Católica Lumen Gentium - Unicatólica\n" +
                 "2. Universidad: Actualmente estoy homologando materias en la carrera de Ingeniería en Sistemas en la misma universidad.\n" +
                 
-                "Certificados:\n" +
+                "Experiencia laboral:\n"
+                + "1. TuCompra (Nov 2021 - Nov 2024): \n"
+                    + "Durante tres años formé parte de TuCompra, \n"
+                    + "una pasarela de pagos Colombiana. \n"
+                    + "Trabajé principalmente con Java y Spring Boot, \n"
+                    + "construyendo microservicios desde cero y entendiendo el flujo \n"
+                    + "transaccional. Aprendí la importancia de escribir código seguro y manejar datos sensibles. \n"
+                    + "Un proyecto destacado fue la integración del medio de pago Nequi, \n"
+                    + "desarrollando backend y frontend para un flujo sin errores.\n"
+                + "2. Codesa (Nov 2024 - Actualmente):\n"
+                    + "Trabajo como desarrollador full stack, \n"
+                    + "usando Java Spring Boot y Angular. \n"
+                    + "Enfocado en resolución de bugs en producción, \n"
+                    + "aplicando hotfixes, preparando documentación y colaborando con el equipo. \n"
+                    + "También he aprendido sobre micro frontends y trabajo en equipo en entornos grandes.\n"
+                        
+                +"Certificados:\n" +
                 "36. Principios SOLID y Clean Code\n" +
                 "37. NPM, librerías y publicación\n" +
                 "38. Angular 14\n" +
@@ -117,9 +131,9 @@ public class OpenaiClient {
                 
                 + "Sobre mi:\n"
                 + "1. Mi fecha de nacimiento 17 de julio de 1996 si mi edad no calcules, limitate a poner la fecha. \n"
-                + "2. Me gusta jugar Ping Pong y los video juego de historia y aventura. \n"
-                + "3. Musica, me gusta el Rock  en español. \n"
-                + "3. Bandas musicales favoritas; cuarteto de nos, la vela puerca y enjambre.\n"
+                + "2. Me gusta el Ukelele, jugar Ping Pong y los video juego de historia y aventura. \n"
+                + "3. Musica, me gusta el Rock. \n"
+                + "3. Bandas musicales favoritas; cuarteto de nos, linkin park y enjambre.\n"
                     
             );
             

@@ -18,7 +18,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Slf4j
 @Configuration
 public class WebConfig {
- 
+
     @Bean
     public WebMvcConfigurer corsConfigurer(HttpInterceptor httpInterceptor) {
 
@@ -26,11 +26,12 @@ public class WebConfig {
 
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
+                // Primero tu interceptor que captura IP y otros headers
                 registry.addInterceptor(httpInterceptor);
             }
         };
     }
-    
+
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();

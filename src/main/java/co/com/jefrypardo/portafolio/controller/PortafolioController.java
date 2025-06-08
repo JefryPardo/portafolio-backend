@@ -32,14 +32,8 @@ public class PortafolioController {
     @PostMapping("chat")
     public ResponseEntity<PortafolioResponse> chatPortafolio(@RequestBody PromptRequest req) {
         
-//        String ip = request.getHeader("X-Forwarded-For");
-//        if (ip == null || ip.isEmpty()) {
-//            ip = request.getRemoteAddr();
-//            log.info("ip: [{}]", ip);
-//        }
-        
         log.info("Request chatPortafolio: [{}]", req);
-        PortafolioResponse resp = portafolioService.askChatGPT(req, "local");
+        PortafolioResponse resp = portafolioService.askChatGPT(req);
         
         return ResponseEntity.ok(resp);
     }

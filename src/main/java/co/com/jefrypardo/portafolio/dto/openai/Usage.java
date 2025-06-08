@@ -5,11 +5,19 @@
 package co.com.jefrypardo.portafolio.dto.openai;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author jeffr
  */
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Usage {
  
     @JsonProperty("prompt_tokens")

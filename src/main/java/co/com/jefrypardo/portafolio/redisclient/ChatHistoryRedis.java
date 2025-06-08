@@ -24,7 +24,4 @@ public class ChatHistoryRedis {
     
     @Id
     String id;
-    
-//    @Builder.Default()
-//    List<Message> chatHistory = null;
 }
